@@ -1,0 +1,109 @@
+/* --- SECTION CONTACT - STYLES PERSONNALISÉS --- */
+
+/* Effet au survol des blocs de contact (téléphone, email) */
+.contact-item {
+    transition: all 0.3s ease !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px) !important;
+    border-color: #f97316 !important; /* Orange-500 */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* --- OPTIMISATION GLOBALE --- */
+
+/* Police plus lisible */
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+    line-height: 1.6 !important;
+}
+
+/* Effet de profondeur pour les cartes de services */
+.service-card {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+
+.service-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Boutons avec effet de dégradé */
+.btn-orange {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+    transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+.btn-orange:hover {
+    transform: scale(1.02) !important;
+    box-shadow: 0 5px 15px rgba(234, 88, 12, 0.4) !important;
+}
+
+/* --- Styles pour le carrousel de réalisations --- */
+
+/* Masquer la barre de défilement par défaut (WebKit/Blink) */
+.realisations-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Masquer la barre de défilement (Firefox) */
+.realisations-carousel {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Assurer un défilement fluide et un ancrage (snap) */
+.realisations-carousel {
+    scroll-behavior: smooth;
+}
+
+.carousel-item {
+    scroll-snap-align: start;
+}
+
+/* Animations au chargement */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, h2, h3 {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Couleurs personnalisées pour Desbarres */
+:root {
+    --color-primary: #f97316; /* Orange */
+    --color-secondary: #1e293b; /* Slate-900 */
+    --color-accent: #ea580c; /* Orange-dark */
+}
+
+/* Amélioration du contraste et lisibilité */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Style des listes à puce */
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive optimisé */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.875rem; /* 30px */
+    }
+
+    h2 {
+        font-size: 1.875rem;
+    }
+}
