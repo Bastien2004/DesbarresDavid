@@ -85,9 +85,6 @@
                 <span class="text-orange-500">Desbarres David</span><br>
                 Les Spécialistes en<br>Toitures & Façades
             </h1>
-            <p class="text-gray-600 text-base sm:text-lg">
-                Services aux particuliers - Spécialiste du traitement depuis 2005
-            </p>
 
             <div class="flex flex-col sm:flex-row gap-3 pt-2">
                 <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-bold text-center transition-all hover:shadow-lg hover:shadow-orange-500/20">
@@ -146,7 +143,7 @@
 
             <!-- SERVICE 4 -->
             <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
-                <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Ravalément</h3>
+                <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Ravalement</h3>
             </div>
 
             <!-- SERVICE 5 -->
@@ -233,6 +230,7 @@
 </section>
 
 <!-- ENGAGEMENTS SECTION -->
+<!-- ENGAGEMENTS SECTION -->
 <section id="engagements" class="py-16 bg-white border-t border-b border-gray-100">
     <div class="max-w-6xl mx-auto px-4">
 
@@ -242,7 +240,7 @@
             <div class="w-16 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div class="p-4 flex flex-col items-center">
                 <div class="w-12 h-12 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center text-xl mb-3"><i class="fa-solid fa-leaf"></i></div>
                 <span class="text-xs font-bold uppercase tracking-wider text-slate-700">Biodégradable à 95%</span>
@@ -259,20 +257,15 @@
                 <div class="w-12 h-12 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center text-xl mb-3"><i class="fa-solid fa-user-shield"></i></div>
                 <span class="text-xs font-bold uppercase tracking-wider text-slate-700">Produits Professionnels</span>
             </div>
-            <div class="p-4 flex flex-col items-center col-span-2 md:col-span-1">
-                <div class="w-12 h-12 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center text-xl mb-3"><span class="text-base font-extrabold text-orange-600">FR</span></div>
-                <span class="text-xs font-bold uppercase tracking-wider text-slate-700">100% Français</span>
-            </div>
         </div>
 
         <div class="mt-12 bg-orange-500 text-white rounded-2xl p-6 md:p-8 text-center max-w-3xl mx-auto">
             <h4 class="text-xl md:text-2xl font-black uppercase tracking-wider">Depuis 2005 - Artisans de Père en Fils</h4>
-            <p class="text-sm md:text-base text-orange-100 mt-2">Plus de 15 ans d'expérience au service des particuliers. Nous nous déplaçons pour vous montrer des échantillons et estimer gratuitement vos travaux.</p>
+            <p class="text-sm md:text-base text-orange-100 mt-2">Plus de 20 ans d'expérience au service des particuliers. Nous nous déplaçons pour vous montrer des échantillons et estimer gratuitement vos travaux.</p>
         </div>
 
     </div>
 </section>
-
 <!-- CONTACT SECTION -->
 <section id="contact" class="py-16 bg-gray-50">
     <div class="max-w-5xl mx-auto px-4">
@@ -283,8 +276,7 @@
                 <p class="text-gray-600 mt-2">Nous vous répondons rapidement pour un devis gratuit ou pour répondre à vos questions.</p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
                 <a href="tel:0642682410" title="Appeler le mobile de Desbarres David" class="contact-item flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                     <span class="w-10 h-10 bg-orange-100 text-orange-500 rounded-lg flex items-center justify-center text-lg shrink-0"><i class="fa-solid fa-mobile-screen"></i></span>
                     <div class="text-left">
@@ -301,21 +293,20 @@
                     </div>
                 </a>
 
-                <a href="mailto:daviddesbarres@icloud.com" title="Envoyer un email à Desbarres David" class="contact-item flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow col-span-1 sm:col-span-2 lg:col-span-1">
+                <a href="mailto:daviddesbarres@icloud.com" title="Envoyer un email à Desbarres David" class="contact-item flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                     <span class="w-10 h-10 bg-orange-100 text-orange-500 rounded-lg flex items-center justify-center text-lg shrink-0"><i class="fa-solid fa-envelope"></i></span>
                     <div class="text-left min-w-0 flex-1">
                         <span class="block text-xs text-gray-400 font-bold uppercase tracking-wide">E-mail</span>
                         <span class="text-xs sm:text-sm xl:text-base font-bold text-slate-950 block truncate">daviddesbarres@icloud.com</span>
                     </div>
                 </a>
-
             </div>
 
             <div class="pt-4">
                 <p class="text-gray-600 font-semibold mb-3">Visitez notre site et suivez-nous</p>
                 <div class="flex justify-center gap-6">
-                    <a href="https://www.artisandesbarres.com" target="_blank" rel="noopener" title="Visiter notre site web" class="text-orange-500 hover:text-orange-600 transition-colors">
-                        <i class="fa-solid fa-globe text-2xl"></i>
+                    <a href="https://www.tiktok.com/@artisan_desbarres" target="_blank" rel="noopener" title="Visiter notre site web" class="text-orange-500 hover:text-orange-600 transition-colors">
+                        <i class="fa-brands fa-tiktok text-2xl"></i>
                     </a>
                     <a href="https://www.facebook.com/artisandesbarres" target="_blank" rel="noopener" title="Suivre sur Facebook" class="text-blue-600 hover:text-blue-700 transition-colors">
                         <i class="fa-brands fa-facebook text-2xl"></i>
