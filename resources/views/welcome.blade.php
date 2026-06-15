@@ -126,47 +126,38 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-            <!-- SERVICE 1 -->
             <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
                 <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Nettoyage</h3>
             </div>
 
-            <!-- SERVICE 2 -->
             <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
                 <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Démoussage</h3>
             </div>
 
-            <!-- SERVICE 3 -->
             <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
                 <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Couverture</h3>
             </div>
 
-            <!-- SERVICE 4 -->
             <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
                 <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Ravalement</h3>
             </div>
 
-            <!-- SERVICE 5 -->
             <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
                 <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Peinture</h3>
             </div>
 
-            <!-- SERVICE 6 -->
             <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
                 <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Traitement</h3>
             </div>
 
-            <!-- SERVICE 7 -->
             <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
                 <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Résine</h3>
             </div>
 
-            <!-- SERVICE 8 -->
             <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
                 <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Hydrofuge</h3>
             </div>
 
-            <!-- SERVICE 9 -->
             <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
                 <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Antimousse</h3>
             </div>
@@ -189,30 +180,47 @@
             <div class="flex realisations-carousel gap-6 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory">
 
                 <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <div class="w-full aspect-video overflow-hidden flex items-center justify-center bg-gray-100">
-                        <div class="text-center text-gray-400 p-4">
-                            <i class="fa-solid fa-image text-4xl mb-2"></i>
-                            <p class="text-sm">Réalisation</p>
-                        </div>
-                    </div>
+                    <img src="{{ asset('images/a.png') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
                 </div>
 
                 <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <div class="w-full aspect-video overflow-hidden flex items-center justify-center bg-gray-100">
-                        <div class="text-center text-gray-400 p-4">
-                            <i class="fa-solid fa-image text-4xl mb-2"></i>
-                            <p class="text-sm">Réalisation</p>
-                        </div>
-                    </div>
+                    <img src="{{ asset('images/b.png') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
                 </div>
 
                 <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <div class="w-full aspect-video overflow-hidden flex items-center justify-center bg-gray-100">
-                        <div class="text-center text-gray-400 p-4">
-                            <i class="fa-solid fa-image text-4xl mb-2"></i>
-                            <p class="text-sm">Réalisation</p>
-                        </div>
-                    </div>
+                    <img src="{{ asset('images/c.png') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                </div>
+
+                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
+                    <img src="{{ asset('images/d.png') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                </div>
+
+                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260612_105607.jpg') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                </div>
+
+                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260612_105608.jpg') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                </div>
+
+                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260612_105613.jpg') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                </div>
+
+                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260612_105614.jpg') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                </div>
+
+                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260612_105615.jpg') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                </div>
+
+                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260612_105618.jpg') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                </div>
+
+                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260612_105619.jpg') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
                 </div>
 
             </div>
@@ -229,7 +237,6 @@
     </div>
 </section>
 
-<!-- ENGAGEMENTS SECTION -->
 <!-- ENGAGEMENTS SECTION -->
 <section id="engagements" class="py-16 bg-white border-t border-b border-gray-100">
     <div class="max-w-6xl mx-auto px-4">
@@ -266,6 +273,7 @@
 
     </div>
 </section>
+
 <!-- CONTACT SECTION -->
 <section id="contact" class="py-16 bg-gray-50">
     <div class="max-w-5xl mx-auto px-4">
