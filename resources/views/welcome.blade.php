@@ -1,368 +1,351 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
 <head>
-
     <link rel="icon" type="image/png" href="{{ asset('images/favicon-desbarres.png') }}">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Balises Principales -->
     <title>Artisan Desbarres David | Les Spécialistes en Toitures & Façades</title>
-    <meta name="description" content="Artisans français de père en fils. Nettoyage, démoussage, couverture, ravalément, peinture, traitement, résine, hydrofuge, antimousse. Garantie 7 ans.">
+    <meta name="description" content="Artisans français de père en fils. Nettoyage, démoussage, couverture, ravalement, peinture, traitement, résine, hydrofuge, antimousse. Garantie 7 ans.">
     <meta name="author" content="Artisan Desbarres David">
     <meta name="robots" content="index, follow">
     <link class="canonical" href="{{ url()->current() }}">
 
-    <!-- Open Graph -->
+    <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:title" content="Artisan Desbarres David">
-
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ url()->current() }}">
     <meta property="twitter:title" content="Artisan Desbarres David">
 
-    <!-- 1. FontAwesome (Icônes) -->
+    <!-- CDNs -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- 2. Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- 3. Votre style personnalisé -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <style>
+        /* Masquage propre et moderne de la scrollbar du carrousel */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-slate-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
 <!-- TOP BAR INFO -->
-<div class="bg-slate-900 text-white py-2 px-4 text-xs md:text-sm">
-    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-        <div class="flex flex-wrap justify-center gap-4">
-            <a href="tel:0642682410" title="Appeler" class="hover:text-orange-500 transition-colors">
-                <i class="fa-solid fa-phone text-orange-500 mr-1"></i> 06 42 68 24 10
+<div class="bg-slate-900 text-white py-2.5 px-4 text-xs md:text-sm border-b border-slate-800">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
+        <div class="flex flex-wrap justify-center gap-5 font-medium">
+            <a href="tel:0642682410" title="Appeler" class="hover:text-orange-500 transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-phone text-orange-500"></i> 06 42 68 24 10
             </a>
-            <a href="tel:0981833980" title="Appeler" class="hover:text-orange-500 transition-colors">
-                <i class="fa-solid fa-phone text-orange-500 mr-1"></i> 09 81 83 39 80
+            <a href="tel:0981833980" title="Appeler" class="hover:text-orange-500 transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-phone text-orange-500"></i> 09 81 83 39 80
             </a>
         </div>
-        <div class="flex items-center gap-4 text-gray-300">
-            <span><i class="fa-solid fa-shield-halved text-orange-500 mr-1"></i> Garantie 7 Ans</span>
-            <span class="hidden md:inline">|</span>
-            <span><i class="fa-solid fa-star text-yellow-400 mr-1"></i> Devis & Échantillons Gratuits</span>
+        <div class="flex items-center gap-4 text-slate-300 font-medium">
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-orange-500"></i> Garantie 7 Ans</span>
+            <span class="hidden md:inline text-slate-700">|</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-star text-amber-400"></i> Devis & Échantillons Gratuits</span>
         </div>
     </div>
 </div>
 
 <!-- HEADER -->
-<header class="bg-white shadow-sm sticky top-0 z-50">
+<header class="bg-white/95 backdrop-blur shadow-sm sticky top-0 z-50 border-b border-slate-100">
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="#" title="Retour en haut de page" class="flex items-center gap-3">
-            <div>
-                <span class="block text-xl font-extrabold tracking-tight text-slate-900">Desbarres David</span>
-                <span class="block text-[10px] uppercase tracking-widest text-orange-500 font-bold -mt-1">Toitures & Façades</span>
-            </div>
+        <a href="#" title="Retour en haut de page" class="group">
+            <span class="block text-xl font-black tracking-tight text-slate-900 group-hover:text-orange-500 transition-colors">Desbarres David</span>
+            <span class="block text-[10px] uppercase tracking-widest text-orange-500 font-extrabold -mt-0.5">Toitures & Façades</span>
         </a>
 
-        <nav class="hidden md:flex items-center gap-6 font-semibold text-sm">
-            <a href="#prestations" title="Voir nos services" class="hover:text-orange-500 transition-colors">Nos Services</a>
-            <a href="#realisations" title="Voir nos réalisations" class="hover:text-orange-500 transition-colors">Nos Réalisations</a>
-            <a href="#engagements" title="Voir nos engagements" class="hover:text-orange-500 transition-colors">Nos Engagements</a>
-            <a href="#contact" title="Nous contacter" class="hover:text-orange-500 transition-colors">Contact & Devis</a>
+        <nav class="hidden md:flex items-center gap-8 font-semibold text-sm text-slate-600">
+            <a href="#prestations" class="hover:text-orange-500 transition-colors">Nos Services</a>
+            <a href="#realisations" class="hover:text-orange-500 transition-colors">Nos Réalisations</a>
+            <a href="#engagements" class="hover:text-orange-500 transition-colors">Nos Engagements</a>
+            <a href="#contact" class="bg-slate-900 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition-all">Contact & Devis</a>
         </nav>
     </div>
 </header>
 
 <!-- HERO SECTION -->
-<section class="bg-gradient-to-b from-white to-orange-50/40 py-12 md:py-20 border-b border-gray-100 overflow-hidden">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-
-        <div class="space-y-6 z-10">
-            <div class="inline-block bg-orange-100 text-orange-600 font-bold px-3 py-1 rounded-full text-xs uppercase tracking-wide">
-                Artisans français de père en fils
-            </div>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
-                <span class="text-orange-500">Desbarres David</span><br>
-                Les Spécialistes en<br>Toitures & Façades
-            </h1>
-
-            <div class="flex flex-col sm:flex-row gap-3 pt-2">
-                <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-bold text-center transition-all hover:shadow-lg hover:shadow-orange-500/20">
-                    Devis & Échantillons Gratuits
-                </a>
-                <a href="tel:0642682410" class="bg-slate-900 hover:bg-slate-800 text-white px-6 py-3 rounded-lg font-bold text-center transition-colors flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-phone"></i> 06 42 68 24 10
-                </a>
-            </div>
+<section class="relative bg-gradient-to-br from-white via-orange-50/20 to-slate-50 py-20 lg:py-32 border-b border-slate-100 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 relative z-10 text-center space-y-8">
+        <div class="inline-flex items-center gap-2 bg-orange-100/80 text-orange-700 font-extrabold px-4 py-1.5 rounded-full text-xs uppercase tracking-wider">
+            <i class="fa-solid fa-house-chimney"></i> Artisans français de père en fils
         </div>
 
-        <div class="relative flex justify-center items-center">
-            <div class="absolute w-72 h-72 bg-orange-200/60 rounded-full blur-3xl -z-10 animate-pulse"></div>
-            <div class="absolute w-48 h-48 bg-slate-200/50 rounded-full blur-2xl translate-x-12 translate-y-12 -z-10"></div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-none tracking-tight">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-600">Desbarres David</span><br>
+            <span class="text-slate-900">Les Spécialistes en</span><br>
+            <span class="text-slate-900/90 text-3xl sm:text-4xl lg:text-5xl font-extrabold">Toitures & Façades</span>
+        </h1>
 
-            <div class="relative p-3 bg-white rounded-3xl shadow-2xl border border-slate-100/80 max-w-md w-full overflow-hidden group">
-                <img src="{{ asset('images/desbarres-hero.png') }}"
-                     alt="Artisan Desbarres David"
-                     class="w-full h-auto rounded-2xl object-cover transition-transform duration-500 group-hover:scale-102">
-            </div>
+        <p class="max-w-xl mx-auto text-slate-600 text-base sm:text-lg font-medium leading-relaxed">
+            Rénovation, entretien et protection de votre habitat. Plus de 20 ans de savoir-faire transmis de génération en génération.
+        </p>
 
-            <div class="absolute -top-4 -right-3 bg-gradient-to-br from-orange-500 to-red-600 text-white w-20 h-20 rounded-full flex flex-col items-center justify-center text-center shadow-xl shadow-orange-500/30 font-bold text-xs p-1 transform rotate-12 transition-transform hover:scale-110 z-20">
-                <span>Garantie</span>
-                <span class="text-lg font-extrabold">7 Ans</span>
-            </div>
+        <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center items-center">
+            <a href="#contact" class="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-center transition-all shadow-md shadow-orange-500/10 hover:shadow-xl hover:shadow-orange-500/20 hover:-translate-y-0.5">
+                Obtenir un Devis Gratuit
+            </a>
+            <a href="tel:0642682410" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-bold text-center flex items-center justify-center gap-3 transition-all hover:-translate-y-0.5">
+                <i class="fa-solid fa-phone text-orange-500"></i> 06 42 68 24 10
+            </a>
         </div>
-
     </div>
 </section>
 
 <!-- SERVICES SECTION -->
-<section id="prestations" class="py-16 bg-gray-50">
+<section id="prestations" class="py-20 bg-slate-50">
     <div class="max-w-6xl mx-auto px-4">
-
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <h2 class="text-3xl font-black text-slate-900">Service de Nettoyage</h2>
-            <div class="w-16 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <span class="text-orange-500 font-extrabold uppercase text-xs tracking-widest">Prestations</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Nos Solutions Toitures & Façades</h2>
+            <div class="w-12 h-1 bg-orange-500 mx-auto rounded-full"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
-                <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Nettoyage</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md hover:border-orange-200 transition-all group">
+                <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-orange-500 group-hover:text-white transition-all"><i class="fa-solid fa-soap"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Nettoyage</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Élimination en profondeur des impuretés et des traces de pollution accumulées au fil du temps.</p>
             </div>
-
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
-                <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Démoussage</h3>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md hover:border-orange-200 transition-all group">
+                <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-orange-500 group-hover:text-white transition-all"><i class="fa-solid fa-bugs"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Démoussage</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Éradication des mousses, lichens et champignons qui s'attaquent à la solidité de vos matériaux.</p>
             </div>
-
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
-                <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Couverture</h3>
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md hover:border-orange-200 transition-all group">
+                <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-orange-500 group-hover:text-white transition-all"><i class="fa-solid fa-hammer"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Couverture</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Rénovation, pose et réparation de tuiles pour garantir l'étanchéité parfaite de votre toit.</p>
             </div>
-
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
-                <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Ravalement</h3>
+            <!-- Card 4 -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md hover:border-orange-200 transition-all group">
+                <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-orange-500 group-hover:text-white transition-all"><i class="fa-solid fa-brush"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Ravalement</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Remise en état esthétique et protectrice des murs extérieurs de votre maison.</p>
             </div>
-
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
-                <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Peinture</h3>
+            <!-- Card 5 -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md hover:border-orange-200 transition-all group">
+                <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-orange-500 group-hover:text-white transition-all"><i class="fa-solid fa-paint-roller"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Peinture</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Application de peintures extérieures haute résistance pour embellir durablement vos façades.</p>
             </div>
-
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
-                <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Traitement</h3>
+            <!-- Card 6 -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md hover:border-orange-200 transition-all group">
+                <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-orange-500 group-hover:text-white transition-all"><i class="fa-solid fa-shield-virus"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Traitement</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Traitements curatifs et préventifs ciblés selon les faiblesses structurelles détectées.</p>
             </div>
-
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
-                <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Résine</h3>
+            <!-- Card 7 -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md hover:border-orange-200 transition-all group">
+                <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-orange-500 group-hover:text-white transition-all"><i class="fa-solid fa-droplet-slash"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Résine & Hydrofuge</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Protection invisible imperméabilisante pour repousser l'eau tout en laissant respirer les matériaux.</p>
             </div>
-
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
-                <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Hydrofuge</h3>
+            <!-- Card 8 -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md hover:border-orange-200 transition-all group">
+                <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-orange-500 group-hover:text-white transition-all"><i class="fa-solid fa-hand-holding-droplet"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Antimousse pro</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Application de produits certifiés à action lente et rémanente contre le retour de la végétation.</p>
             </div>
-
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
-                <h3 class="text-2xl font-extrabold text-slate-900 mb-2">Antimousse</h3>
-            </div>
-
         </div>
     </div>
 </section>
 
 <!-- RÉALISATIONS SECTION -->
-<section id="realisations" class="py-16 bg-white border-t border-gray-100 overflow-hidden">
+<section id="realisations" class="py-20 bg-white border-t border-slate-100">
     <div class="max-w-7xl mx-auto px-4">
-
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <h2 class="text-3xl font-black text-slate-900">Nos Réalisations</h2>
-            <div class="w-16 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <span class="text-orange-500 font-extrabold uppercase text-xs tracking-widest">Galerie</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Nos Réalisations Récentes</h2>
+            <div class="w-12 h-1 bg-orange-500 mx-auto rounded-full"></div>
         </div>
 
-        <div class="realisations-carousel-wrapper relative group">
-
-            <div class="flex realisations-carousel gap-6 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory">
-
-                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <img src="{{ asset('images/a.png') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+        <div class="relative group max-w-6xl mx-auto">
+            <div class="flex no-scrollbar gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4">
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/a.png') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                 </div>
-
-                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <img src="{{ asset('images/b.png') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/b.png') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                 </div>
-
-                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <img src="{{ asset('images/c.png') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/c.png') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                 </div>
-
-                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <img src="{{ asset('images/d.png') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/d.png') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                 </div>
-
-                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <img src="{{ asset('images/IMG_20260612_105607.jpg') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260612_105607.jpg') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                 </div>
-
-                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <img src="{{ asset('images/IMG_20260612_105608.jpg') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260612_105608.jpg') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                 </div>
-
-                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <img src="{{ asset('images/IMG_20260612_105613.jpg') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260612_105613.jpg') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                 </div>
-
-                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <img src="{{ asset('images/IMG_20260612_105614.jpg') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260612_105614.jpg') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                 </div>
-
-                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <img src="{{ asset('images/IMG_20260612_105615.jpg') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260612_105615.jpg') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                 </div>
-
-                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <img src="{{ asset('images/IMG_20260612_105618.jpg') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260612_105618.jpg') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                 </div>
-
-                <div class="carousel-item flex-none w-[85%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
-                    <img src="{{ asset('images/IMG_20260612_105619.jpg') }}" alt="Réalisation toiture façade" class="w-full h-72 object-cover object-center hover:scale-105 transition-transform duration-300">
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260612_105619.jpg') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                 </div>
-
             </div>
 
-            <!-- Boutons Flèches -->
-            <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-white hover:bg-orange-500 hover:text-white text-slate-800 w-10 h-10 rounded-full shadow-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all z-10">
-                <i class="fa-solid fa-chevron-left text-base"></i>
+            <button class="carousel-prev absolute -left-4 top-1/2 -translate-y-1/2 bg-slate-900 hover:bg-orange-500 text-white w-10 h-10 rounded-full shadow-lg hidden md:flex items-center justify-center transition-all z-10">
+                <i class="fa-solid fa-chevron-left text-sm"></i>
             </button>
-            <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-white hover:bg-orange-500 hover:text-white text-slate-800 w-10 h-10 rounded-full shadow-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all z-10">
-                <i class="fa-solid fa-chevron-right text-base"></i>
+            <button class="carousel-next absolute -right-4 top-1/2 -translate-y-1/2 bg-slate-900 hover:bg-orange-500 text-white w-10 h-10 rounded-full shadow-lg hidden md:flex items-center justify-center transition-all z-10">
+                <i class="fa-solid fa-chevron-right text-sm"></i>
             </button>
+        </div>
 
+            <!-- Boutons de navigation Flèches -->
+            <button class="carousel-prev absolute -left-4 top-1/2 -translate-y-1/2 bg-slate-900 hover:bg-orange-500 text-white w-10 h-10 rounded-full shadow-lg hidden md:flex items-center justify-center transition-all z-10">
+                <i class="fa-solid fa-chevron-left text-sm"></i>
+            </button>
+            <button class="carousel-next absolute -right-4 top-1/2 -translate-y-1/2 bg-slate-900 hover:bg-orange-500 text-white w-10 h-10 rounded-full shadow-lg hidden md:flex items-center justify-center transition-all z-10">
+                <i class="fa-solid fa-chevron-right text-sm"></i>
+            </button>
         </div>
     </div>
 </section>
 
 <!-- ENGAGEMENTS SECTION -->
-<section id="engagements" class="py-16 bg-white border-t border-b border-gray-100">
+<section id="engagements" class="py-20 bg-slate-50 border-t border-b border-slate-100">
     <div class="max-w-6xl mx-auto px-4">
-
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <h2 class="text-3xl font-black text-slate-900">Pourquoi nous faire confiance ?</h2>
-            <p class="text-gray-600 mt-2">Nos valeurs et notre engagement envers la qualité et l'excellence.</p>
-            <div class="w-16 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <span class="text-orange-500 font-extrabold uppercase text-xs tracking-widest">Garanties</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Pourquoi nous faire confiance ?</h2>
+            <div class="w-12 h-1 bg-orange-500 mx-auto rounded-full"></div>
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div class="p-4 flex flex-col items-center">
-                <div class="w-12 h-12 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center text-xl mb-3"><i class="fa-solid fa-leaf"></i></div>
-                <span class="text-xs font-bold uppercase tracking-wider text-slate-700">Biodégradable à 95%</span>
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center">
+                <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center text-xl mb-3"><i class="fa-solid fa-leaf"></i></div>
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-800">Biodégradable à 95%</span>
             </div>
-            <div class="p-4 flex flex-col items-center">
-                <div class="w-12 h-12 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center text-xl mb-3"><i class="fa-solid fa-credit-card"></i></div>
-                <span class="text-xs font-bold uppercase tracking-wider text-slate-700">Paiement en plusieurs fois</span>
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center">
+                <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center text-xl mb-3"><i class="fa-solid fa-credit-card"></i></div>
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-800">Paiement échelonné</span>
             </div>
-            <div class="p-4 flex flex-col items-center">
-                <div class="w-12 h-12 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center text-xl mb-3"><i class="fa-solid fa-shield-halved"></i></div>
-                <span class="text-xs font-bold uppercase tracking-wider text-slate-700">Assurance RC Pro</span>
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center">
+                <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center text-xl mb-3"><i class="fa-solid fa-shield-halved"></i></div>
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-800">Assurance RC Pro</span>
             </div>
-            <div class="p-4 flex flex-col items-center">
-                <div class="w-12 h-12 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center text-xl mb-3"><i class="fa-solid fa-user-shield"></i></div>
-                <span class="text-xs font-bold uppercase tracking-wider text-slate-700">Produits Professionnels</span>
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center">
+                <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center text-xl mb-3"><i class="fa-solid fa-user-shield"></i></div>
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-800">Gamme Professionnelle</span>
             </div>
         </div>
 
-        <div class="mt-12 bg-orange-500 text-white rounded-2xl p-6 md:p-8 text-center max-w-3xl mx-auto">
-            <h4 class="text-xl md:text-2xl font-black uppercase tracking-wider">Depuis 2005 - Artisans de Père en Fils</h4>
-            <p class="text-sm md:text-base text-orange-100 mt-2">Plus de 20 ans d'expérience au service des particuliers. Nous nous déplaçons pour vous montrer des échantillons et estimer gratuitement vos travaux.</p>
+        <div class="mt-16 bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-3xl p-8 md:p-12 text-center max-w-3xl mx-auto shadow-lg shadow-orange-500/10">
+            <h4 class="text-xl md:text-2xl font-black uppercase tracking-wider mb-3">Depuis 2005 — Artisans de Père en Fils</h4>
+            <p class="text-sm md:text-base text-orange-50/90 max-w-xl mx-auto leading-relaxed">
+                Plus de 20 ans d'expérience au service de l'habitat. Déplacement à domicile gratuit pour l'étude de vos travaux et la présentation d'échantillons.
+            </p>
         </div>
-
     </div>
 </section>
 
 <!-- CONTACT SECTION -->
-<section id="contact" class="py-16 bg-gray-50">
-    <div class="max-w-5xl mx-auto px-4">
-
-        <div class="space-y-6 text-center">
-            <div>
-                <h2 class="text-3xl font-black text-slate-900">Contactez-nous</h2>
-                <p class="text-gray-600 mt-2">Nous vous répondons rapidement pour un devis gratuit ou pour répondre à vos questions.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-                <a href="tel:0642682410" title="Appeler le mobile de Desbarres David" class="contact-item flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                    <span class="w-10 h-10 bg-orange-100 text-orange-500 rounded-lg flex items-center justify-center text-lg shrink-0"><i class="fa-solid fa-mobile-screen"></i></span>
-                    <div class="text-left">
-                        <span class="block text-xs text-gray-400 font-bold uppercase tracking-wide">Mobile</span>
-                        <span class="text-base xl:text-lg font-bold text-slate-950 whitespace-nowrap">06 42 68 24 10</span>
-                    </div>
-                </a>
-
-                <a href="tel:0981833980" title="Appeler le téléphone fixe" class="contact-item flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                    <span class="w-10 h-10 bg-orange-100 text-orange-500 rounded-lg flex items-center justify-center text-lg shrink-0"><i class="fa-solid fa-phone"></i></span>
-                    <div class="text-left">
-                        <span class="block text-xs text-gray-400 font-bold uppercase tracking-wide">Téléphone fixe</span>
-                        <span class="text-base xl:text-lg font-bold text-slate-950 whitespace-nowrap">09 81 83 39 80</span>
-                    </div>
-                </a>
-
-                <a href="mailto:daviddesbarres@icloud.com" title="Envoyer un email à Desbarres David" class="contact-item flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                    <span class="w-10 h-10 bg-orange-100 text-orange-500 rounded-lg flex items-center justify-center text-lg shrink-0"><i class="fa-solid fa-envelope"></i></span>
-                    <div class="text-left min-w-0 flex-1">
-                        <span class="block text-xs text-gray-400 font-bold uppercase tracking-wide">E-mail</span>
-                        <span class="text-xs sm:text-sm xl:text-base font-bold text-slate-950 block truncate">daviddesbarres@icloud.com</span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="pt-4">
-                <p class="text-gray-600 font-semibold mb-3">Visitez notre site et suivez-nous</p>
-                <div class="flex justify-center gap-6">
-                    <a href="https://www.tiktok.com/@artisan_desbarres" target="_blank" rel="noopener" title="Visiter notre site web" class="text-orange-500 hover:text-orange-600 transition-colors">
-                        <i class="fa-brands fa-tiktok text-2xl"></i>
-                    </a>
-                    <a href="https://www.facebook.com/artisandesbarres" target="_blank" rel="noopener" title="Suivre sur Facebook" class="text-blue-600 hover:text-blue-700 transition-colors">
-                        <i class="fa-brands fa-facebook text-2xl"></i>
-                    </a>
-                    <a href="https://www.instagram.com/artisandesbarres" target="_blank" rel="noopener" title="Suivre sur Instagram" class="text-pink-600 hover:text-pink-700 transition-colors">
-                        <i class="fa-brands fa-instagram text-2xl"></i>
-                    </a>
-                </div>
-            </div>
+<section id="contact" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+            <span class="text-orange-500 font-extrabold uppercase text-xs tracking-widest">Contact</span>
+            <h2 class="text-3xl font-black text-slate-900">Demandez votre étude gratuite</h2>
+            <div class="w-12 h-1 bg-orange-500 mx-auto rounded-full"></div>
         </div>
 
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+            <a href="tel:0642682410" class="flex items-center gap-4 bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-orange-300 transition-all shadow-sm">
+                <span class="w-10 h-10 bg-orange-50 text-orange-500 rounded-lg flex items-center justify-center text-base shrink-0"><i class="fa-solid fa-mobile-screen"></i></span>
+                <div>
+                    <span class="block text-[10px] text-slate-400 font-bold uppercase tracking-wider">Mobile</span>
+                    <span class="text-sm font-bold text-slate-900">06 42 68 24 10</span>
+                </div>
+            </a>
+
+            <a href="tel:0981833980" class="flex items-center gap-4 bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-orange-300 transition-all shadow-sm">
+                <span class="w-10 h-10 bg-orange-50 text-orange-500 rounded-lg flex items-center justify-center text-base shrink-0"><i class="fa-solid fa-phone"></i></span>
+                <div>
+                    <span class="block text-[10px] text-slate-400 font-bold uppercase tracking-wider">Fixe</span>
+                    <span class="text-sm font-bold text-slate-900">09 81 83 39 80</span>
+                </div>
+            </a>
+
+            <a href="mailto:daviddesbarres@icloud.com" class="flex items-center gap-4 bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-orange-300 transition-all shadow-sm sm:col-span-2 lg:col-span-1">
+                <span class="w-10 h-10 bg-orange-50 text-orange-500 rounded-lg flex items-center justify-center text-base shrink-0"><i class="fa-solid fa-envelope"></i></span>
+                <div class="min-w-0 flex-1">
+                    <span class="block text-[10px] text-slate-400 font-bold uppercase tracking-wider">E-mail</span>
+                    <span class="text-sm font-bold text-slate-900 truncate block">daviddesbarres@icloud.com</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="text-center space-y-4">
+            <p class="text-slate-500 font-semibold text-sm tracking-wide">Rejoignez-nous sur les réseaux sociaux</p>
+            <div class="flex justify-center gap-5">
+                <a href="https://www.tiktok.com/@artisan_desbarres" target="_blank" rel="noopener" class="w-11 h-11 bg-slate-100 hover:bg-slate-900 text-slate-700 hover:text-white rounded-full flex items-center justify-center text-lg transition-all shadow-sm">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.facebook.com/artisandesbarres" target="_blank" rel="noopener" class="w-11 h-11 bg-slate-100 hover:bg-blue-600 text-slate-700 hover:text-white rounded-full flex items-center justify-center text-lg transition-all shadow-sm">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/artisandesbarres" target="_blank" rel="noopener" class="w-11 h-11 bg-slate-100 hover:bg-pink-600 text-slate-700 hover:text-white rounded-full flex items-center justify-center text-lg transition-all shadow-sm">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-slate-900 text-gray-400 pt-10 pb-6 text-xs border-t border-slate-800">
-    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
-
-        <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
-            <div class="space-y-1">
-                <span class="block text-white font-extrabold text-base">Artisan Desbarres David</span>
-                <p>Services aux particuliers depuis 2005</p>
-                <p>N° SIRET: 487 443 905 00038</p>
-                <p>Assurance RC Pro</p>
-            </div>
+<footer class="bg-slate-900 text-slate-400 pt-12 pb-8 text-xs border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="space-y-1.5 text-center md:text-left">
+            <span class="block text-white font-black text-base tracking-tight">Artisan Desbarres David</span>
+            <p class="text-slate-400 font-medium">Services de confiance aux particuliers depuis 2005</p>
+            <p class="text-slate-500">N° SIRET : 487 443 905 00038 | Couverture d'assurance décennale et RC Pro</p>
         </div>
 
-        <div class="flex flex-col items-center md:items-end gap-2">
-            <p>© {{ date('Y') }} Artisan Desbarres David. Tous droits réservés.</p>
-            <div class="flex gap-4">
-                <a href="{{ route('legal.mentions') }}" title="Mentions légales" class="hover:text-white transition-colors">Mentions légales</a>
-                <span>•</span>
-                <a href="{{ route('legal.confidentialite') }}" title="Politique de confidentialité" class="hover:text-white transition-colors">Confidentialité</a>
+        <div class="flex flex-col items-center md:items-end gap-3 font-medium">
+            <p class="text-slate-500">© {{ date('Y') }} Artisan Desbarres David. Tous droits réservés.</p>
+            <div class="flex gap-4 text-slate-400">
+                <a href="{{ route('legal.mentions') }}" class="hover:text-white transition-colors">Mentions légales</a>
+                <span class="text-slate-700">•</span>
+                <a href="{{ route('legal.confidentialite') }}" class="hover:text-white transition-colors">Confidentialité</a>
             </div>
         </div>
-
     </div>
 </footer>
 
 <!-- SCRIPT CARROUSEL -->
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const carousel = document.querySelector('.realisations-carousel');
+        const carousel = document.querySelector('.no-scrollbar');
         const prevBtn = document.querySelector('.carousel-prev');
         const nextBtn = document.querySelector('.carousel-next');
 
         if (carousel && prevBtn && nextBtn) {
-            const itemWidth = carousel.querySelector('.carousel-item').offsetWidth;
+            const itemWidth = carousel.querySelector('div').offsetWidth;
             const scrollAmount = itemWidth + 24; // 24 = gap-6
 
             prevBtn.addEventListener('click', () => {
