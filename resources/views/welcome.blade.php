@@ -216,15 +216,6 @@
                 <i class="fa-solid fa-chevron-right text-sm"></i>
             </button>
         </div>
-
-            <!-- Boutons de navigation Flèches -->
-            <button class="carousel-prev absolute -left-4 top-1/2 -translate-y-1/2 bg-slate-900 hover:bg-orange-500 text-white w-10 h-10 rounded-full shadow-lg hidden md:flex items-center justify-center transition-all z-10">
-                <i class="fa-solid fa-chevron-left text-sm"></i>
-            </button>
-            <button class="carousel-next absolute -right-4 top-1/2 -translate-y-1/2 bg-slate-900 hover:bg-orange-500 text-white w-10 h-10 rounded-full shadow-lg hidden md:flex items-center justify-center transition-all z-10">
-                <i class="fa-solid fa-chevron-right text-sm"></i>
-            </button>
-        </div>
     </div>
 </section>
 
@@ -333,6 +324,9 @@
                 <span class="text-slate-700">•</span>
                 <a href="{{ route('legal.confidentialite') }}" class="hover:text-white transition-colors">Confidentialité</a>
             </div>
+            <a href="https://guideon.dev" target="_blank" rel="noopener noreferrer" class="text-[11px] hover:text-blue-500 transition-colors mt-1">
+                Développé par GuideOn
+            </a>
         </div>
     </div>
 </footer>
