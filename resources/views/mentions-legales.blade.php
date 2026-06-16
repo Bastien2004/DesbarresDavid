@@ -35,7 +35,7 @@
             <h2 class="text-xl font-bold text-slate-900"><i class="fa-solid fa-user text-orange-500 mr-2"></i>Éditeur du site</h2>
             <p class="text-gray-600 leading-relaxed">
                 Le présent site internet est édité et exploité par <strong>Desbarres David</strong>, agissant en qualité d'entrepreneur individuel / artisan.<br>
-                <strong>Adresse légale :</strong> 1 place de Docteur Guersant 59620 Aulnoye Aymeries<br>
+                <strong>Adresse légale :</strong> <br>
                 <strong>Téléphone :</strong> 06 99 23 38 05 / 03 59 76 78 60<br>
                 <strong>E-mail :</strong> daviddesbarres@icloud.com
             </p>
@@ -44,7 +44,7 @@
         <section class="space-y-3 border-t border-gray-100 pt-6">
             <h2 class="text-xl font-bold text-slate-900"><i class="fa-solid fa-id-card text-orange-500 mr-2"></i>Immatriculation</h2>
             <p class="text-gray-600 leading-relaxed">
-                <strong>Numéro SIRET :</strong>  <br>
+                <strong>Numéro SIRET : 487 443 905 00038 </strong>  <br>
                 <strong>Garantie contractuelle :</strong> Garantie de 5 ans sur les prestations de démoussage et traitements de toiture.
             </p>
         </section>
