@@ -187,6 +187,15 @@
                     <img src="{{ asset('images/d.png') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/e.png') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/f.png') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/g.png') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
                     <img src="{{ asset('images/IMG_20260612_105607.jpg') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
@@ -206,6 +215,15 @@
                 </div>
                 <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
                     <img src="{{ asset('images/IMG_20260612_105619.jpg') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260616_211858.jpg') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260616_211902.jpg') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex-none w-[80%] sm:w-[45%] lg:w-[31%] snap-start rounded-2xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                    <img src="{{ asset('images/IMG_20260616_211906.jpg') }}" alt="Réalisation Toiture & Façade" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                 </div>
             </div>
 
