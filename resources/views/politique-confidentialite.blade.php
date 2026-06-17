@@ -15,7 +15,7 @@
 <header class="bg-white shadow-sm py-4">
     <div class="max-w-4xl mx-auto px-4 flex justify-between items-center">
         <a href="/" class="flex items-center gap-2 font-extrabold text-slate-900">
-            <span class="text-orange-500">🦊</span> Desbarres David
+            <span class="text-orange-500"></span> Desbarres David
         </a>
         <a href="/" class="text-sm font-semibold text-orange-500 hover:text-orange-600 transition-colors">
             <i class="fa-solid fa-arrow-left mr-1"></i> Retour à l'accueil
