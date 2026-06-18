@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="icon" type="image/png" href="{{ asset('images/favicon-renard.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('images/loup.png') }}">
 
 
     <meta charset="UTF-8">

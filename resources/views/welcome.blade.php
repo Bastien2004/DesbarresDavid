@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
 <head>
-    <link rel="icon" type="image/png" href="{{ asset('images/favicon-desbarres.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('images/loup.png') }}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -75,28 +75,42 @@
 
 <!-- HERO SECTION -->
 <section class="relative bg-gradient-to-br from-white via-orange-50/20 to-slate-50 py-20 lg:py-32 border-b border-slate-100 overflow-hidden">
-    <div class="max-w-6xl mx-auto px-4 relative z-10 text-center space-y-8">
-        <div class="inline-flex items-center gap-2 bg-orange-100/80 text-orange-700 font-extrabold px-4 py-1.5 rounded-full text-xs uppercase tracking-wider">
-            <i class="fa-solid fa-house-chimney"></i> Artisans français de père en fils
-        </div>
+    <div class="max-w-6xl mx-auto px-4 relative z-10">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+            <!-- CONTENU TEXTE - GAUCHE -->
+            <div class="flex-1 text-center lg:text-left space-y-8">
+                <div class="inline-flex items-center gap-2 bg-orange-100/80 text-orange-700 font-extrabold px-4 py-1.5 rounded-full text-xs uppercase tracking-wider lg:ml-0 mx-auto">
+                    <i class="fa-solid fa-house-chimney"></i> Artisans français de père en fils
+                </div>
 
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-none tracking-tight">
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-600">Desbarres David</span><br>
-            <span class="text-slate-900">Les Spécialistes en</span><br>
-            <span class="text-slate-900/90 text-3xl sm:text-4xl lg:text-5xl font-extrabold">Toitures & Façades</span>
-        </h1>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-none tracking-tight">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-600">Desbarres David</span><br>
+                    <span class="text-slate-900">Les Spécialistes en</span><br>
+                    <span class="text-slate-900/90 text-3xl sm:text-4xl lg:text-5xl font-extrabold">Toitures & Façades</span>
+                </h1>
 
-        <p class="max-w-xl mx-auto text-slate-600 text-base sm:text-lg font-medium leading-relaxed">
-            Rénovation, entretien et protection de votre habitat. Plus de 20 ans de savoir-faire transmis de génération en génération.
-        </p>
+                <p class="text-slate-600 text-base sm:text-lg font-medium leading-relaxed lg:max-w-xl">
+                    Rénovation, entretien et protection de votre habitat. Plus de 20 ans de savoir-faire transmis de génération en génération.
+                </p>
 
-        <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center items-center">
-            <a href="#contact" class="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-center transition-all shadow-md shadow-orange-500/10 hover:shadow-xl hover:shadow-orange-500/20 hover:-translate-y-0.5">
-                Obtenir un Devis Gratuit
-            </a>
-            <a href="tel:0642682410" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-bold text-center flex items-center justify-center gap-3 transition-all hover:-translate-y-0.5">
-                <i class="fa-solid fa-phone text-orange-500"></i> 06 42 68 24 10
-            </a>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4 lg:justify-start justify-center items-center sm:items-stretch">
+                    <a href="#contact" class="flex-1 sm:flex-none bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-center transition-all shadow-md shadow-orange-500/10 hover:shadow-xl hover:shadow-orange-500/20 hover:-translate-y-0.5">
+                        Obtenir un Devis Gratuit
+                    </a>
+                    <a href="tel:0642682410" class="flex-1 sm:flex-none bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-bold text-center flex items-center justify-center gap-3 transition-all hover:-translate-y-0.5">
+                        <i class="fa-solid fa-phone text-orange-500"></i> 06 42 68 24 10
+                    </a>
+                </div>
+            </div>
+
+            <!-- IMAGE - DROITE -->
+            <div class="flex-1 flex justify-center lg:justify-end">
+                <div class="relative p-3 bg-white rounded-3xl shadow-2xl border border-slate-100/80 max-w-md w-full overflow-hidden group">
+                    <img src="{{ asset('images/loup.png') }}"
+                         alt="Mascotte Desbarres David - Artisan en Toitures & Façades"
+                         class="w-full h-auto rounded-2xl object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+            </div>
         </div>
     </div>
 </section>
