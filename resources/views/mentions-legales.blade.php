@@ -35,7 +35,8 @@
             <h2 class="text-xl font-bold text-slate-900"><i class="fa-solid fa-user text-orange-500 mr-2"></i>Éditeur du site</h2>
             <p class="text-gray-600 leading-relaxed">
                 Le présent site internet est édité et exploité par <strong>Desbarres David</strong>, agissant en qualité d'entrepreneur individuel / artisan.<br>
-                <strong>Adresse légale :</strong> <br>
+                <strong>Adresse légale : 52 RUE D'EMERAINVILLE 77183 CROISSY-BEAUBOURG
+                </strong> <br>
                 <strong>Téléphone :</strong> 06 99 23 38 05 / 03 59 76 78 60<br>
                 <strong>E-mail :</strong> daviddesbarres@icloud.com
             </p>
