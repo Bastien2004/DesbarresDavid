@@ -171,7 +171,7 @@
             <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md hover:border-orange-200 transition-all group">
                 <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-orange-500 group-hover:text-white transition-all"><i class="fa-solid fa-hand-holding-droplet"></i></div>
                 <h3 class="text-xl font-bold text-slate-900 mb-2">Antimousse pro</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Application de produits certifiés à action lente et rémanente contre le retour de la végétation.</p>
+                <p class="text-slate-500 text-sm leading-relaxed">Application de produits certifiés pour éliminer durablement lichens, algues, mousses et champignons.</p>
             </div>
         </div>
     </div>
