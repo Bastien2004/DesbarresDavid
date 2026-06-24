@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Balises Principales -->
-    <title>Artisan Desbarres David | Les Spécialistes en Toitures & Façades</title>
+    <title>Desbarres David | Les Spécialistes en Toitures & Façades</title>
     <meta name="description" content="Artisans français de père en fils. Nettoyage, démoussage, couverture, ravalement, peinture, traitement, résine, hydrofuge, antimousse. Garantie 7 ans.">
-    <meta name="author" content="Artisan Desbarres David">
+    <meta name="author" content="Desbarres David">
     <meta name="robots" content="index, follow">
     <link class="canonical" href="{{ url()->current() }}">
 
     <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="Artisan Desbarres David">
+    <meta property="og:title" content="Desbarres David">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ url()->current() }}">
-    <meta property="twitter:title" content="Artisan Desbarres David">
+    <meta property="twitter:title" content="Desbarres David">
 
     <!-- CDNs -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -344,13 +344,13 @@
 <footer class="bg-slate-900 text-slate-400 pt-12 pb-8 text-xs border-t border-slate-800">
     <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
         <div class="space-y-1.5 text-center md:text-left">
-            <span class="block text-white font-black text-base tracking-tight">Artisan Desbarres David</span>
+            <span class="block text-white font-black text-base tracking-tight">Desbarres David</span>
             <p class="text-slate-400 font-medium">Services de confiance aux particuliers depuis 2005</p>
             <p class="text-slate-500">N° SIRET : 487 443 905 00038 | Couverture d'assurance décennale et RC Pro</p>
         </div>
 
         <div class="flex flex-col items-center md:items-end gap-3 font-medium">
-            <p class="text-slate-500">© {{ date('Y') }} Artisan Desbarres David. Tous droits réservés.</p>
+            <p class="text-slate-500">© {{ date('Y') }} Desbarres David. Tous droits réservés.</p>
             <div class="flex gap-4 text-slate-400">
                 <a href="{{ route('legal.mentions') }}" class="hover:text-white transition-colors">Mentions légales</a>
                 <span class="text-slate-700">•</span>
