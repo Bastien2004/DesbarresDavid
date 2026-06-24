@@ -6,23 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Balises Principales -->
-    <title>Desbarres David | Les Spécialistes en Toitures & Façades</title>
-    <meta name="description" content="Artisans français de père en fils. Nettoyage, démoussage, couverture, ravalement, peinture, traitement, résine, hydrofuge, antimousse. Garantie 7 ans.">
+    <title>David Desbarres - Artisan toiture, façade et rénovation</title>
+    <meta name="description" content="David Desbarres, artisan spécialisé en toiture, façade, nettoyage, démoussage et rénovation. Devis gratuit.">
     <meta name="author" content="Desbarres David">
     <meta name="robots" content="index, follow">
-    <link class="canonical" href="{{ url()->current() }}">
+    <link rel="canonical" href="{{ url()->current() }}">
 
     <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:title" content="Desbarres David">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="{{ url()->current() }}">
-    <meta property="twitter:title" content="Desbarres David">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ url()->current() }}">
+    <meta name="twitter:title" content="Desbarres David">
+    <meta name="twitter:description" content="Artisan toiture, façade, rénovation, nettoyage et démoussage. Devis gratuit.">
+    <meta property="og:image" content="{{ asset('images/loup.png') }}">
 
     <!-- CDNs -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="application/ld+json">
+        {
+         "@context":"https://schema.org",
+         "@type":"LocalBusiness",
+         "name":"Desbarres David",
+         "description":"Artisan toiture, façade et rénovation",
+         "telephone":"+33642682410",
+         "email":"daviddesbarres@icloud.com",
+         "priceRange":"€€",
+         "openingHours":"Mo-Fr 08:00-18:00"
+        }
+    </script>
 
     <style>
         /* Masquage propre et moderne de la scrollbar du carrousel */
