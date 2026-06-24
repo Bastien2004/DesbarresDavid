@@ -26,19 +26,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script type="application/ld+json">
-        {
-         "@context":"https://schema.org",
-         "@type":"LocalBusiness",
-         "name":"Desbarres David",
-         "description":"Artisan toiture, façade et rénovation",
-         "telephone":"+33642682410",
-         "email":"daviddesbarres@icloud.com",
-         "priceRange":"€€",
-         "openingHours":"Mo-Fr 08:00-18:00"
-        }
-    </script>
-
     <style>
         /* Masquage propre et moderne de la scrollbar du carrousel */
         .no-scrollbar::-webkit-scrollbar {
