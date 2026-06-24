@@ -36,6 +36,8 @@
             scrollbar-width: none;
         }
     </style>
+
+    <meta name="google-site-verification" content="V5foPzO2juzX0qgj2zfpOu7gZKdG09rlHTji59zW80c" />
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
